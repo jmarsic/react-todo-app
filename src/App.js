@@ -8,11 +8,15 @@ function App() {
     { id: 2, text: "Fix the bike" },
   ]);
 
+  const deleteTodo = (id) => {
+    setTodos(todos.filter((todos) => todos.id !== id));
+  };
+
   return (
     <div className="container">
       <Header title="Todo App" />
       <>
-        <TodoList todos={todos} />
+        <TodoList todos={todos} onDelete={deleteTodo} />
       </>
     </div>
   );
