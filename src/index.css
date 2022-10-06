@@ -23,25 +23,26 @@ h6 {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(to bottom right, #1c6758, #3d8361);
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
 }
 
 .header {
-  padding: 30px;
-  background-color: #d6cda4;
-  border-radius: 25px 25px 0 0;
+  width: 460px;
   display: flex;
-  /* justify-content: space-between; */
+  background-color: #d6cda4;
+  padding: 26px;
+  border-radius: 22px 22px 0 0;
+  justify-content: center;
 }
 
 .todo {
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 20px;
-  background-color: #EEF2E6;
+  background-color: #eef2e6;
 }
 
 .btn {
@@ -57,3 +58,18 @@ h6 {
   box-shadow: 4px 8px 20px -10px rgba(0, 0, 0, 1);
 }
 
+.add-todo {
+  margin: 0;
+}
+
+.footer {
+  width: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #d6cda4;
+  padding: 26px;
+  border-radius: 0 0 22px 22px;
+  margin-top: 20px;
+}
