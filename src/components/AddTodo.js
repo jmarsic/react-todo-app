@@ -20,14 +20,15 @@ const AddTodo = ({ onAdd }) => {
 
   return (
     <form className="add-todo" onSubmit={onSubmit}>
-      <div>
+      <div className="input-text">
         <input
+          className="input"
           type="text"
           placeholder="Add your new todo"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button>
+        <button className="button">
           <FaPlus />
         </button>
       </div>

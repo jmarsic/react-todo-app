@@ -32,19 +32,19 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <Header
-        title="Todo App"
-        toggleForm={toggleAddForm}
-        showForm={showAddForm}
-      />
-      {showAddForm && <AddTodo onAdd={addTodo} />}
-      {todos.length > 0 ? (
-        <TodoList todos={todos} onDelete={deleteTodo} />
-      ) : (
-        "No todos"
-      )}
-      <Footer todos={todos} onClick={deleteTodos} />
+    <div className="wrapper">
+      <div className="container">
+        <Header
+          title="Todo App"
+          toggleForm={toggleAddForm}
+          showForm={showAddForm}
+        />
+        {showAddForm && <AddTodo onAdd={addTodo} />}
+        {todos.length > 0 && (
+          <TodoList todos={todos} onDelete={deleteTodo} />
+        )}
+        <Footer todos={todos} onClick={deleteTodos} />
+      </div>
     </div>
   );
 }

@@ -19,30 +19,49 @@ h6 {
   margin-bottom: 0;
 }
 
-.container {
-  min-height: 100vh;
+.wrapper {
   width: 100%;
-  background-image: linear-gradient(to bottom right, #1c6758, #3d8361);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #344e41, #3a5a40);
+}
+
+.container {
+  width: 460px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #dad7cd;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 4px 8px 20px -10px rgba(0, 0, 0, 1);
 }
 
 .header {
-  width: 460px;
+  width: 100%;
   display: flex;
-  background-color: #d6cda4;
+  background-color: #588157;
   padding: 26px;
-  border-radius: 22px 22px 0 0;
   justify-content: center;
 }
 
-.todo {
+.todo-list {
+  width: 100%;
   margin-top: 10px;
+}
+
+.todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 10px; */
   padding: 10px 20px;
   font-size: 20px;
-  background-color: #eef2e6;
+  background-color: #dad7cd;
 }
 
 .btn {
@@ -53,23 +72,43 @@ h6 {
   border-radius: 10px;
   padding: 10px 20px;
   margin-left: 80px;
+  border-bottom: 2px solid black;
   cursor: pointer;
   font-size: 15px;
   box-shadow: 4px 8px 20px -10px rgba(0, 0, 0, 1);
 }
 
+.input-text {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 20px;
+}
+
+.input {
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.button {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
 .add-todo {
-  margin: 0;
+  margin-top: 20;
 }
 
 .footer {
-  width: 460px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #d6cda4;
+  background-color: #e0ddd2;
   padding: 26px;
-  border-radius: 0 0 22px 22px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
